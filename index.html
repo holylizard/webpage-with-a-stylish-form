@@ -7,6 +7,7 @@
     <meta name="author" content="'David Akinola">
     <title>LogIn/SignUp</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <section>
@@ -20,10 +21,10 @@
                 <img src="boy.jpeg" alt="boy">
             </div>
 
-            <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="submit" class="form-submit-bttn" >
+            <form method="post">
+                <input type="email" placeholder="Email" id="mail" required>
+                <input type="password" placeholder="Password" id="pass" required>
+                <input type="submit" class="form-submit-bttn" onclick="passwordChecker()">
             </form>
 
         </div>
